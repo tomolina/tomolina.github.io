@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&display=swap" rel="stylesheet">
+    <link href="theStyle.css" rel="stylesheet"/>
+
+    <title>Anti-War</title>
+</head>
+<body>
+    <h1 style="font-size: 60px; font-weight: bold; margin-bottom: 5px;">Anti-War</h1>
+    <main>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="antiWar.html">Anti-War</a></li>
+            <li><a href="site2.html">Reflections on Relationships</a></li>
+            <li><a href="site2.html">tbd</a></li>
+           
+        </ul>
+        
+        
+        
+    
+    </main>
+
+        <div id="int">
+            <div id="int2">
+                <h1>INTAMACY</h1>
+
+            </div>
+
+            <div>
+                <img src="https://media.newyorker.com/photos/622a3b0b24b3e0e703175f6f/master/w_2240,c_limit/220321_r40061.jpg" style="height: 350px; margin-right: 100px; border-radius: 20px;">
+            </div>
+        </div>
+
+        <div id="hidden"> 
+            <p style="font-size: 18pt;"> "her poems destabilize the effect of military vocabulary by consistently juxtaposing it with representations of the effects and consequences of violence, as well as images of intimacy, in order to articulate an anti-war stance." - R. Shareah Taleghani</p>
+        </div>
+
+    <div class="pic-container">
+        <div class="slides fade">
+            <img src="https://culturalpolitics.net/index/sites/default/files/inline-images/make_love_not_war.gif" style="width: 25vw;" >
+         </div>
+         <div class="slides fade">
+            <img src="https://depts.washington.edu/antiwar/images/vietnam/dontgo_800.jpg" style="width: 25vw;" >
+         </div>
+         <div class="slides fade">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWzwzcWT_uX_jlO7EseRBOZN6f8DWC1OsAaztRRnQNmA&usqp=CAU&ec=48600112" style="width: 25vw;" >
+         </div>
+
+    </div>
+<br>
+<div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+  </div>
+
+<script>
+    let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("slides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 3000); // Change image every 2 seconds
+    }
+ </script>
+
+</body>
+</html>

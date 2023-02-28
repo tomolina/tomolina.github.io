@@ -1,0 +1,62 @@
+#smoke{
+    background-color: moccasin;
+    animation-name: slidein, bounce;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+ }
+ @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+     to {
+      margin-left: 0%;
+      width: 100%;
+    }
+ }
+ .rotate {
+    animation: rotation 8s infinite linear;
+  }
+   @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+ 
+  #tabs{ 
+    display: flex;
+
+    justify-content: space-evenly;
+  }
+ 
+  body {
+    font-family: Barlow;
+  }
+
+  ul{
+    list-style-type: none;
+    /* margin-top: 5px; */
+    /* margin: 0; */
+    padding-top: 0;
+    overflow: hidden;
+    background-color: rgb(111, 97, 67);
+    display: flex;
+    align-items: center;
+}
+
+li{
+    float: left;
+    border-right: 1px solid black;
+}
+
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 2vh 5vw;
+    text-decoration: none;
+}
+ 

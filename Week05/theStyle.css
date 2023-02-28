@@ -1,0 +1,164 @@
+body {
+    background-color: cornsilk;
+    text-align: center;
+    font-family: 'EB Garamond', serif;
+    color:rgb(0, 0, 0);
+}
+main {
+    padding-top: 10px; 
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#link1{
+    animation-name: slideup;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    font-family: 'EB Garamond', serif;
+    color:rgb(0, 0, 0);
+}
+#link2{
+    animation-name: slideup2;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    font-family: 'EB Garamond', serif;
+    color:rgb(0, 0, 0);
+}
+#link3{
+    animation-name: slideup2;
+    animation-duration: 2.5s;
+    animation-iteration-count: 1;
+    font-family: 'EB Garamond', serif;
+    color:rgb(0, 0, 0);
+}
+
+@keyframes slideup{
+    from { 
+        margin-top: 90%;
+    }
+    to{
+        margin-top: 0%;
+    }
+}
+@keyframes slideup2{
+    from { 
+        margin-top: 120%;
+    }
+    to{
+        margin-top: 0%;
+    }
+}
+@keyframes slideup2{
+    from { 
+        margin-top: 140%;
+    }
+    to{
+        margin-top: 0%;
+    }
+}
+/* Anti-War page */
+
+#int{
+    background-color:blanchedalmond;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: dashed;
+    border-radius: 20px;
+}
+#int2{
+    background-color: rgb(227, 128, 101);
+    display: flex; 
+    /* justify-content: center; */
+    border: solid 1px black;
+    max-width: fit-content;
+    border-radius: 20px;
+
+
+}
+
+#int2 h1{
+    font-size: 100pt; 
+    width: 60vw;
+    border-bottom: solid 1px black;
+    border-radius: 20px;
+    padding: 0px;
+}
+
+#hidden{
+    background-color:blanchedalmond;
+    border-bottom: solid 10px black;
+    border-radius: 40px;
+    display: none;
+
+}
+
+#int:hover + #hidden{
+    display: block;
+}
+
+ul{
+    list-style-type: none;
+    /* margin-top: 5px; */
+    /* margin: 0; */
+    padding-top: 0;
+    overflow: hidden;
+    background-color: rgb(111, 97, 67);
+    display: flex;
+    align-items: center;
+}
+
+li{
+    float: left;
+    border-right: 1px solid black;
+}
+
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 2vh 5vw;
+    text-decoration: none;
+}
+
+.slides{
+    display: none;
+}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.pic-container {
+    border: solid 2px rgb(1, 0, 0);
+    border-radius: 20px;
+    max-width: 40vw;
+    position: relative;
+    background-color: #d86227;
+    
+    margin: auto;
+    margin-top: 120px;
+  }
+/* The dots/bullets/indicators */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active {
+    background-color: #717171;
+  }
+.fade {
+    animation-name: fade;
+    animation-duration: 2s;
+  }
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
