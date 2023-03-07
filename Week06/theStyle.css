@@ -1,0 +1,135 @@
+
+body{
+    display: flex;
+    justify-content: center;
+    padding-top: 150px;
+    max-height: 100%;
+    background: radial-gradient(circle at 100%, #4e1a80, #370e44 50%, #e2a3f5 75%, #9045a7)
+}
+
+
+/* Source: https://alvaromontoro.com/blog/67970/drawing-a-triangle-with-css */
+.triangle {
+    width: 0;
+    height: 0;
+    border: 400px solid transparent;
+    border-top: 0;
+    border-bottom: 700px solid rgb(16, 48, 21);
+    animation-name: spin1;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+
+  }
+
+@keyframes spin1{
+    from {
+        transform:rotate(0deg);
+        
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+.tri2{
+    display: inline-block;
+    margin: 0;
+    width: 0;
+    height: 0;
+    border: 250px solid transparent;
+    border-top: 0;
+    
+    animation-name: spin2;
+    animation-duration: 4500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+
+@keyframes spin2{
+    from {
+        transform:rotate(0deg);
+        border-bottom: 500px solid rgb(16, 48, 21);
+        
+    }
+    to {
+         transform:rotate(360deg);
+         border-bottom: 500px solid rgb(50, 164, 67);
+    }
+}
+
+.tri3{
+    display: inline-block;
+    margin: 0;
+    width: 0;
+    height: 0;
+    border: 150px solid transparent;
+    border-top: 0;
+    border-bottom: 300px solid rgb(136, 201, 145);
+    animation-name: spin3;
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+@keyframes spin3{
+    from {
+        transform:rotate(0deg);
+        border-bottom: 300px solid rgb(50, 164, 67);
+        
+    }
+    to {
+        transform:rotate(360deg);
+        border-bottom: 300px solid rgb(136, 201, 145);
+    }
+}
+
+.tri4{
+    display: inline-block;
+    margin: 0;
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-top: 0;
+    border-bottom: 100px solid rgb(192, 236, 198);
+    animation-name: spin4;
+    animation-duration: 3500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+@keyframes spin4{
+    from {
+        transform:rotate(0deg);
+        border-bottom: 100px solid rgb(136, 201, 145);
+        
+    }
+    to {
+        transform:rotate(360deg);
+        border-bottom: 100px solid rgb(192, 236, 198);
+    }
+}
+
+.tri5{
+    display: inline-block;
+    margin: 0;
+    width: 0;
+    height: 0;
+    border: 25px solid transparent;
+    border-top: 0;
+    border-bottom: 50px solid rgb(225, 247, 228);
+    animation-name: spin5;
+    animation-duration: 3000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+
+@keyframes spin5{
+    from {
+        transform:rotate(0deg);
+        border-bottom: 50px solid rgb(192, 236, 198);;
+        
+    }
+    to {
+        transform:rotate(360deg);
+        border-bottom: 50px solid rgb(225, 247, 228);
+    }
+}
