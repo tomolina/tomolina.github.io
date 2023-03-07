@@ -1,10 +1,14 @@
 
+
 body{
     display: flex;
     justify-content: center;
     padding-top: 150px;
     max-height: 100%;
-    background: radial-gradient(circle at 100%, #4e1a80, #370e44 50%, #e2a3f5 75%, #9045a7)
+    background: linear-gradient(to bottom right, rgb(97, 42, 168), rgb(195, 143, 213));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
 }
 
 
