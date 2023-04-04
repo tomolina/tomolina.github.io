@@ -1,0 +1,479 @@
+#slide1{
+    /* background-color: #FF1493; */
+    background-image: linear-gradient(to bottom right, white, #FF1493);
+}
+#slide2{
+    font-family: 'Alice', serif;
+    background-color: #ffc9f0;
+    background-image: linear-gradient(to right, #FF1493, black);
+}
+
+#intro{
+    background-color: #c747a3;
+    border: solid 1px black;
+    display: flex;
+    margin-left: 6vw;
+    text-align: center;
+    font-size: large;
+   max-width: 75vw;
+}
+#title{
+    font-size: 90px;
+    background: -webkit-linear-gradient(#050505, #c01f1f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#para{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 50vw;
+    gap: 20px;
+}
+
+#img{
+    display: block;
+}
+#date{
+    color: white;
+    font-size: 32px;
+}
+
+#img1{
+    /* background-color: black; */
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin: auto;
+}
+#container{
+    display: flex;
+    justify-content: space-between;
+}
+#firsthalf{
+    max-width: 55vw;
+    min-height: 80vh;
+    color: white;
+    background-color: #7917a0;
+    text-align: center;
+    border-radius: 50px;
+
+}
+#movie{
+    position: absolute;
+    right: 0em;
+    max-width: 50vw;
+    max-height: 100vh;
+}
+
+.fly{
+    position: absolute;
+    height: 10vh;
+    width: auto;
+    left: 0em;
+    bottom:50%;
+    /* rotate: 90deg; */
+}
+
+.fly2{
+    position: absolute;
+    height: 10vh;
+    width: auto;
+    right: 0em;
+    bottom:50%;
+    rotate: 90deg;
+}
+/* Source: Geeksforgeeks.org */
+.fly:hover {
+    animation: Shake 0.5s linear infinite;
+}
+.fly2:hover {
+    animation: Shake 0.5s linear infinite;
+}
+/*Using keyframes for shaking an image*/
+@keyframes Shake {
+    0% {transform: rotate(5deg);}
+    25% {transform: rotate(-6deg);}
+    50% {transform: rotate(5deg);}
+    75% {transform: rotate(-6deg);}
+    100% {transform: rotate(5deg);}
+}
+
+/* slide 3 */
+*{
+    padding: 0;
+    margin: 0;
+  }
+ 
+ 
+ #slide3 {
+ font-family: 'Courier New', Courier, monospace; text-align: center; color: white; font-size: x-large; font-weight: bold;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+    to right,
+    deeppink 0%,
+    deeppink 50%,
+    black 50%,
+    black 100%
+  );
+ }
+ 
+ 
+ .animate-character
+ {
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #ffc9f0 0%,
+    salmon 29%,
+    #ff1361 67%,
+    #972dbf 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 190px;
+ }
+ 
+ 
+ @keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+ }
+ 
+/* !!!!! Slide 5 */
+
+#slide5{
+    background: radial-gradient(#b5478e, #000000);
+    padding: 2.5%;
+}
+
+.img-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    }
+.img-list li {
+    border: 5px solid transparent;
+    box-sizing: border-box;
+    width: 33.33%;
+    float: left;
+    position: relative;
+    cursor: pointer;
+    }
+.img-list img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+/* .img-placeholder:before,
+.img-placeholder:after {
+padding-top: 33.33%;
+content: "";
+display: block;
+}  
+.img-placeholder {
+background: #222;
+box-shadow: 0 0 0 8px #222 inset, 0 0 0 9px #333 inset;
+color: #444;
+line-height: 0;
+text-align: center;
+display: block;
+} */
+
+/* The hover effect
+-------------------------------------------------------------- */
+.img-list li:before {
+transition: all .5s ease;
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background: #333;
+transform: scale(0);
+}
+.img-list li:hover:before {
+opacity: .5;
+transform: scale(1);
+}
+.img-list li:after {
+transition: all .6s ease .2s;
+content: "";
+position: absolute;
+top: 8px;
+left: 8px;
+right: 8px;
+bottom: 8px;
+border: 1px solid #000000;
+background: #df18d5;
+opacity: 0;
+transform: scale(0);
+}
+.img-list li:hover:after {
+opacity: .35;
+transform: scale(1);
+}
+
+
+ #slide6 {
+    font-family: 'Courier New', Courier, monospace; text-align: center; color: white; font-size: x-large; font-weight: bold;
+    background: deeppink
+    }
+ 
+ 
+    .ball {
+      width: 10px;
+      height: 10px;
+      margin: 10px auto;
+      border-radius: 50px;
+    }
+   
+    .ball:nth-child(1) {
+      background: black;
+      -webkit-animation: right 1s infinite ease-in-out;
+      -moz-animation: right 1s infinite ease-in-out;
+      animation: right 1s infinite ease-in-out;
+    }
+   
+    .ball:nth-child(2) {
+      background: black;
+      -webkit-animation: left 1.1s infinite ease-in-out;
+      -moz-animation: left 1.1s infinite ease-in-out;
+      animation: left 1.1s infinite ease-in-out;
+    }
+   
+    .ball:nth-child(3) {
+      background: black;
+      -webkit-animation: right 1.05s infinite ease-in-out;
+      -moz-animation: right 1.05s infinite ease-in-out;
+      animation: right 1.05s infinite ease-in-out;
+    }
+   
+    .ball:nth-child(4) {
+      background: black;
+      -webkit-animation: left 1.15s infinite ease-in-out;
+      -moz-animation: left 1.15s infinite ease-in-out;
+      animation: left 1.15s infinite ease-in-out;
+    }
+   
+    .ball:nth-child(5) {
+      background: black;
+      -webkit-animation: right 1.1s infinite ease-in-out;
+      -moz-animation: right 1.1s infinite ease-in-out;
+      animation: right 1.1s infinite ease-in-out;
+    }
+   
+    .ball:nth-child(6) {
+      background: black;
+      -webkit-animation: left 1.05s infinite ease-in-out;
+      -moz-animation: left 1.05s infinite ease-in-out;
+      animation: left 1.05s infinite ease-in-out;
+    }
+   
+    .ball:nth-child(7) {
+      background: black;
+      -webkit-animation: right 1s infinite ease-in-out;
+      -moz-animation: right 1s infinite ease-in-out;
+      animation: right 1s infinite ease-in-out;
+    }
+   
+    @-webkit-keyframes right {
+      0% {
+        -webkit-transform: translate(-15px);
+      }
+      50% {
+        -webkit-transform: translate(15px);
+      }
+      100% {
+        -webkit-transform: translate(-15px);
+      }
+    }
+   
+    @-webkit-keyframes left {
+      0% {
+        -webkit-transform: translate(15px);
+      }
+      50% {
+        -webkit-transform: translate(-15px);
+      }
+      100% {
+        -webkit-transform: translate(15px);
+      }
+    }
+   
+    @-moz-keyframes right {
+      0% {
+        -moz-transform: translate(-15px);
+      }
+      50% {
+        -moz-transform: translate(15px);
+      }
+      100% {
+        -moz-transform: translate(-15px);
+      }
+    }
+   
+    @-moz-keyframes left {
+      0% {
+        -moz-transform: translate(15px);
+      }
+      50% {
+        -moz-transform: translate(-15px);
+      }
+      100% {
+        -moz-transform: translate(15px);
+      }
+    }
+   
+    @keyframes right {
+      0% {
+        transform: translate(-15px);
+      }
+      50% {
+        transform: translate(15px);
+      }
+      100% {
+        transform: translate(-15px);
+      }
+    }
+   
+    @keyframes left {
+      0% {
+        transform: translate(15px);
+      }
+      50% {
+        transform: translate(-15px);
+      }
+      100% {
+        transform: translate(15px);
+      }
+    }
+ 
+ 
+    h4 {
+      margin: 0;
+      text-align: center;
+      font-weight: bolder;
+      font-size: 20px;
+      overflow: hidden;
+      line-height: 1;
+      color: black;
+    }
+
+    
+    /* !!!!! */
+    #slide4 {
+        font-family: 'Courier New', Courier, monospace; text-align: center; color: white; font-size: x-large; font-weight: bold;
+          width: 100%;
+          height: 100vh;
+            background: repeating-linear-gradient(
+            45deg,
+            deeppink,
+            deeppink 5%,
+            salmon 5%,
+            salmon 10%
+          );
+            background-size: 100px 100px;
+            animation: move-it 2s linear infinite;
+        }
+       
+       
+       @keyframes move-it {
+          0% {
+            background-position: initial;
+          }
+          100% {
+            background-position: 100px 0px;
+          }
+        }
+       
+       
+        .flier {
+          pointer-events: none;
+        }
+         .flier > * {
+        /* Adjust animation duration to change the element’s speed */
+                animation: fly 50s linear infinite;
+                pointer-events: none !important;
+          top: 0;
+          left: 0;
+          transform: translateX(-120%) translateY(-120%) rotateZ(0);
+          position: fixed;
+          animation-delay: 1s;
+          z-index: 999999;
+        }
+          /* Keyframe values control where the element will begin
+            and end its trajectory across the screen. Each rule
+            represents a path the element follows across the screen. */
+        
+        @keyframes fly {
+           98.001%, 0% {
+                        display: block;
+            transform: translateX(-200%) translateY(100vh) rotateZ(0deg)
+          }
+           15% {
+            transform: translateX(100vw) translateY(-100%) rotateZ(180deg)
+          }
+           15.001%, 18% {
+            transform: translateX(100vw) translateY(-30%) rotateZ(0deg)
+          }
+           40% {
+            transform: translateX(-200%) translateY(3vh) rotateZ(-180deg)
+          }
+           40.001%, 43% {
+            transform: translateX(-200%) translateY(-100%) rotateZ(-180deg)
+          }
+           65% {
+            transform: translateX(100vw) translateY(50vh) rotateZ(0deg)
+          }
+           65.001%, 68% {
+            transform: translateX(20vw) translateY(-200%) rotateZ(180deg)
+          }
+           95% {
+            transform: translateX(10vw) translateY(100vh) rotateZ(0deg)
+          }
+        }
+       
+       
+        body {
+          background-color: #bedcff;
+          font-family: Helvetica;
+          font-weight: bold;
+        }
+        .container {
+          padding: 0px 20px 0;
+          max-width: 960px;
+          margin: 0 auto;
+        }
+        h2 {
+          margin: 0;
+          text-align: center;
+          font-size: 100px;
+          overflow: hidden;
+          line-height: 1;
+          color: black;
+        }
+        h2 span {
+          display: block;
+          animation: reveal 1.5s cubic-bezier(0.25, 0, 0.175, 1) 0.5s;
+        }
+         @keyframes reveal {
+          0% {
+            transform: translate(0,100%);
+          }
+          100% {
+            transform: translate(0,0);
+          }
+        }
+       
