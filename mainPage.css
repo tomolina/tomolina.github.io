@@ -1,0 +1,51 @@
+
+body{
+    background-color: hsl(186, 30%, 86%);
+}
+h1{
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 45pt;
+    text-align: center;
+}
+h2{
+    padding: 0;
+    margin: 0;
+}
+
+ul{
+    list-style-type: none;
+    margin-top: 5px;
+    /* margin: 0; */
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(204, 192, 122);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+li{
+    float: left;
+    border: 1px solid white;
+}
+
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 2vh 5vw;
+    text-decoration: none;
+}
+
+.active{
+    background-color: beige;
+}
+
+#gif{
+    display: flex;
+    justify-content: center;
+}
+#icons{
+    position: absolute;
+    bottom: 0em;
+}
