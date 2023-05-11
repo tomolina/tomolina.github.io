@@ -17,9 +17,6 @@ let userName;
 //Since multiple images (and mp3 soon) are in the project, its best practice to preload them;
 //Helps avoid errors and loading screens
 function preload(){
-    // objImage = loadImage('/images/cleat.png');
-    // img2 = loadImage('/images/head.png');
-    // ball = loadImage('/images/ball.png')
 
     objImage = loadImage('images/cleat.png');
     img2 = loadImage('images/head.png');
@@ -33,14 +30,14 @@ function setup(){
 }
 
 //Not working yet - Only works locally
-// function user(){
-//     userName = document.getElementById("userInput").value;
-//     localStorage['usn'] = userName;
-//     if(userName.length == 0){
-//        localStorage['usn'] = "Hero";
-//     }
-//     console.log(userName);
-// }
+function user(){
+    userName = document.getElementById("userInput").value;
+    localStorage['usn'] = userName;
+    if(userName.length == 0){
+       localStorage['usn'] = "Hero";
+    }
+    console.log(userName);
+}
 
 function draw(){
     //this is a loop
@@ -51,10 +48,10 @@ function draw(){
     background(220, 10);
     
     textSize(70);
-    text("Hero", 280, 80);
+    //text("Hero", 280, 80);
     //Below only works locally unfortunatly
-    // text(localStorage['usn'], 280, 80);
-    //fill(0, 102, 153);
+    text(localStorage['usn'], 280, 80);
+    fill(0, 102, 153);
 
     textSize(75);
     text("Enemy", 875, 80);
