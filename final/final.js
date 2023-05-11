@@ -17,8 +17,12 @@ let userName;
 //Since multiple images (and mp3 soon) are in the project, its best practice to preload them;
 //Helps avoid errors and loading screens
 function preload(){
-    objImage = loadImage('/images/cleat.png');
-    img2 = loadImage('/images/head.png');
+    // objImage = loadImage('/images/cleat.png');
+    // img2 = loadImage('/images/head.png');
+    // ball = loadImage('/images/ball.png')
+
+    objImage = loadImage('images/cleat.png');
+    img2 = loadImage('images/head.png');
     ball = loadImage('images/ball.png')
 }
 
