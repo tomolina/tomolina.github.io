@@ -28,15 +28,15 @@ function setup(){
     ball2 = new Ball(ball,700, 100);
 }
 
-//Not working yet
-function user(){
-    userName = document.getElementById("userInput").value;
-    localStorage['usn'] = userName;
-    if(userName.length == 0){
-       localStorage['usn'] = "Hero";
-    }
-    console.log(userName);
-}
+//Not working yet - Only works locally
+// function user(){
+//     userName = document.getElementById("userInput").value;
+//     localStorage['usn'] = userName;
+//     if(userName.length == 0){
+//        localStorage['usn'] = "Hero";
+//     }
+//     console.log(userName);
+// }
 
 function draw(){
     //this is a loop
@@ -46,9 +46,10 @@ function draw(){
     clear();
     background(220, 10);
     
-    //Not working but for text on screen, username
     textSize(70);
-    text(localStorage['usn'], 280, 80);
+    text("Hero", 280, 80);
+    //Below only works locally unfortunatly
+    // text(localStorage['usn'], 280, 80);
     //fill(0, 102, 153);
 
     textSize(75);
